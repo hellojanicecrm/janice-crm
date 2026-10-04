@@ -690,8 +690,7 @@ form .btn{width:100%}
 <div><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
         <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
         <div><label for="crm-field">Which CRM are you using? <small>(optional)</small></label><input id="crm-field" name="crm" type="text" placeholder="For example: HubSpot or another CRM"></div>
-        <div><label for="message">What would you like help with?</label>
-        <div class="field">
+        <div><div class="field">
           <label for="service">What do you need help with?</label>
           <select id="service" name="service" required>
             <option value="" selected disabled>Select a service</option>
@@ -702,7 +701,8 @@ form .btn{width:100%}
             <option value="Not Sure Yet / Need Advice">Not Sure Yet / Need Advice</option>
           </select>
         </div>
-<textarea id="message" name="message" placeholder="Tell me what's happening with your CRM, what isn't working, or what you'd like to improve." required></textarea></div>
+<label for="message">Tell me more about your CRM</label>
+          <textarea id="message" name="message" placeholder="Tell me what's happening with your CRM, what isn't working, or what you'd like to improve." required></textarea></div>
         <div class="form-msg" id="form-msg" role="status"></div>
         
 <input type="hidden" name="_subject" value="New CRM inquiry from your website">
